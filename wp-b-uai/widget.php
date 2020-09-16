@@ -1,14 +1,12 @@
 <?php
 /**
 * Plugin Name: Colocar a barrinha do Uai nos Blogs
-* Plugin URI: http://www.soek.com/
-* Version: 1.4.6
-* Author: WPBeginner
-* Author URI: http://www.soek.com/
-* Description: Allows you to insert code or text in the header or footer of your WordPress blog
+* Plugin URI: http://www.uai.com.br/
+* Version: 0.0
+* Author: A4D
+* Author URI: http://www.uai.com.br/
+* Description: Permitir inserir a barrinha do UAI no Blog
 * License: GPL2
-* Text Domain: insert-headers-and-footers
-* Domain Path: languages
 */
 
 /*  Copyright 2019 WPBeginner
@@ -24,12 +22,9 @@
 
     You should have received a copy of the GNU General Public License
     along with this program; if not, write to the Free Software
-    Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+    Foundation
 */
 
-/**
-* Insert Headers and Footers Class
-*/
 require_once( 'BFIGitHubPluginUploader.php' );
 if ( is_admin() ) {
     new BFIGitHubPluginUpdater( __FILE__, 'igorluiza4d', "barrinhaUAI", "0f092f2b8713ffacb7cc85f44f4a9784b8a871f5" );
