@@ -1,17 +1,17 @@
 <?php
 /**
 * Plugin Name: Colocar a barrinha do Uai nos Blogs
-* Plugin URI: http://www.soek.com/
-* Version: 1.4.6
-* Author: WPBeginner
-* Author URI: http://www.soek.com/
-* Description: Allows you to insert code or text in the header or footer of your WordPress blog
+* Plugin URI: http://www.uai.com/
+* Version: 0.2
+* Author: A4D
+* Author URI: http://www.uai.com/
+* Description: Inserir a Barra do Uai por meio de plugin
 * License: GPL2
 * Text Domain: insert-headers-and-footers
 * Domain Path: languages
 */
 
-/*  Copyright 2019 WPBeginner
+/*  Copyright 2019 A4D
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as
@@ -102,7 +102,8 @@ class InserirBarrinhaUAI {
 			return;
 		}
 		if($setting=='barrinha_insert_body_tools'){
-			$meta='Jornal estado de minas';
+			$meta=file_get_contents('barrinha-uai.html');
+			#$meta='Jornal estado de minas';
 			// Output
 			echo wp_unslash( $meta );
 
