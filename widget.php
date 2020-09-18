@@ -32,7 +32,7 @@
 */
 require_once( 'BFIGitHubPluginUploader.php' );
 if ( is_admin() ) {
-    new BFIGitHubPluginUpdater( __FILE__, 'igorluiza4d', "barrinhaUAI", "0f092f2b8713ffacb7cc85f44f4a9784b8a871f5" );
+    new BFIGitHubPluginUpdater( __FILE__, 'igorluiza4d', "barrinhauai", "" );
 }
 
 class InserirBarrinhaUAI {
@@ -102,10 +102,19 @@ class InserirBarrinhaUAI {
 			return;
 		}
 		if($setting=='barrinha_insert_body_tools'){
-			$meta=file_get_contents('barrinha-uai.html');
-			#$meta='Jornal estado de minas';
-			// Output
-			echo wp_unslash( $meta );
+			$filename = __FILE__."/barrinha-uai.html";
+			echo $filename;
+			#echo $filename;
+			#exit;
+			// $handle = fopen ($filename, "r");
+			// $conteudo = fread ($handle, filesize ($filename));
+			// fclose ($handle);
+
+			// $meta=$conteudo;
+			// var_dump($meta);
+			// #$meta='Jornal estado de minas';
+			// // Output
+			// echo wp_unslash( $meta );
 
 		}
 		
