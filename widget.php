@@ -1,10 +1,10 @@
 <?php
 /**
 * Plugin Name: Colocar a barrinha do Uai nos Blogs
-* Plugin URI: http://www.uai.com/
-* Version: 0.2
+* Plugin URI: http://www.uai.com.br/
+* Version: 1.2.1
 * Author: A4D
-* Author URI: http://www.uai.com/
+* Author URI: http://www.uai.com.br/
 * Description: Inserir a Barra do Uai por meio de plugin
 * License: GPL2
 * Text Domain: insert-headers-and-footers
