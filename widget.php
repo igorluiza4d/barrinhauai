@@ -45,7 +45,7 @@ class InserirBarrinhaUAI {
         $this->plugin               = new stdClass;
         $this->plugin->name         = 'wp-b-uai'; // Plugin Folder
         $this->plugin->displayName  = 'InserirBarrinhaUAI'; // Plugin Name
-        $this->plugin->version      = '1.0';
+        $this->plugin->version      = '1.2.1';
         $this->plugin->folder       = plugin_dir_path( __FILE__ );
         $this->plugin->url          = plugin_dir_url( __FILE__ );
         $this->plugin->db_welcome_dismissed_key = $this->plugin->name . '_welcome_dismissed_key';
