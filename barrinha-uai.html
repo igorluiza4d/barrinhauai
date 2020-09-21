@@ -239,3 +239,24 @@ a.uai-bar__links:hover {
     </ul>
     <div class="uai-bar-nav-side-wrapper" id="uai_bar_nav_side_wrapper"></div>
   </div>
+  <script type="text/javascript">
+ (function() {
+  var btn = document.getElementById('uai_bar_btn');
+  var el = document.querySelector('div.uai-bar');
+  var wrapper = document.getElementById('uai_bar_nav_side_wrapper');
+  var nav = false;
+  btn.addEventListener('click', function() {
+    if(nav) {
+      el.classList.remove('nav-uai-active');
+      nav = false;
+    } else {
+      el.classList.add('nav-uai-active');
+      nav = true;
+    }
+  })
+  wrapper.addEventListener('click', function() {
+    el.classList.remove('nav-uai-active');
+    nav = false;
+  });
+})();   
+  </script>

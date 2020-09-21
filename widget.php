@@ -102,19 +102,18 @@ class InserirBarrinhaUAI {
 			return;
 		}
 		if($setting=='barrinha_insert_body_tools'){
-			$filename = __FILE__."/barrinha-uai.html";
-			echo $filename;
+			$filename = dirname(__FILE__)."/barrinha-uai.html";
 			#echo $filename;
 			#exit;
-			// $handle = fopen ($filename, "r");
-			// $conteudo = fread ($handle, filesize ($filename));
-			// fclose ($handle);
+			$handle = fopen ($filename, "r");
+			$conteudo = fread ($handle, filesize ($filename));
+			fclose ($handle);
 
-			// $meta=$conteudo;
+			$meta=$conteudo;
 			// var_dump($meta);
 			// #$meta='Jornal estado de minas';
 			// // Output
-			// echo wp_unslash( $meta );
+			echo wp_unslash( $meta );
 
 		}
 		
